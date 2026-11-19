@@ -4,7 +4,10 @@ public class PharmacyInventory {
     private static volatile int sink;
     private static long lookupTime(Map<String,Integer> map, int rounds) {
         long start=System.nanoTime();
-        for(int i=0;i<rounds;i++) sink += map.get("MED" + (i % map.size()));
+        for(int i=0;i<rounds;i++) {
+            Integer val = map.get(String.format("MED%06d", (i % map.size())));
+            if (val != null) sink += val;
+        }
         return System.nanoTime()-start;
     }
     private static void testSize(int count) {
