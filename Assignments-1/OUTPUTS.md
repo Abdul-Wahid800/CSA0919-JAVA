@@ -118,7 +118,9 @@ TN01AB1111
 **Execution Status:** VERIFIED SUCCESS (OpenJDK 21)
 
 ```text
-Execution completed.
+Car fee: Rs 30.0
+Bike fee: Rs 10.0
+Total: Rs 40.0
 ```
 
 ## Task-12 – Day-4 Challenge - Adapt Design to Changed Requirements

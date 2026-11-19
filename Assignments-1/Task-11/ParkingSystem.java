@@ -31,7 +31,7 @@ class Ticket {
     final LocalDateTime entry;
     Ticket(Vehicle vehicle, LocalDateTime entry) { this.vehicle = vehicle; this.entry = entry; }
 }
-class ParkingSystem {
+class ParkingLotCore {
     private final String[][] slots;
     private final Map<String, Ticket> active = new HashMap<>();
     ParkingLotCore(int[] capacities) {
